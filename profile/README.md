@@ -1,17 +1,20 @@
-# CNC STM32H755 Control System
+# Surowiecki Motion Labs
 
-Prototype CNC control system based on a dual-core STM32H755 controller and a Qt desktop HMI.
+Embedded motion control projects focused on STM32 firmware, CNC systems and desktop HMI tools.
 
-The project was originally developed as an engineering thesis prototype and is now being expanded as an open development platform for CNC motion control, firmware architecture experiments and desktop-machine communication.
+The first project developed under this lab is **SMS CNC Control System**: a prototype CNC control platform based on a dual-core STM32H755 controller and a Qt desktop HMI.
+It was originally created as an engineering thesis prototype and is now being expanded as an open development platform for CNC motion control, firmware architecture experiments and desktop-machine communication.
 
 ## Repositories
 
 | Repository | Description |
 |---|---|
-| [stm32h755-cnc-firmware](https://github.com/CNC-STM32-H755/stm32h755-cnc-firmware) | Dual-core STM32H755 firmware for G-code parsing, IPC, motion execution and STEP/DIR generation. |
-| [qt-cnc-hmi](https://github.com/CNC-STM32-H755/qt-cnc-hmi) | Qt desktop HMI used to send G-code, stream programs, monitor machine state and control manual jog operations. |
+| [stm32h755-cnc-firmware](https://github.com/Surowiecki-Motion-Labs/stm32h755-cnc-firmware) | Dual-core STM32H755 firmware for G-code parsing, IPC, motion execution and STEP/DIR generation. |
+| [qt-cnc-hmi](https://github.com/Surowiecki-Motion-Labs/qt-cnc-hmi) | Qt desktop HMI used to send G-code, stream programs, monitor machine state and control manual jog operations. |
 
-## System Overview
+## SMS CNC Control System
+
+### System Overview
 
 The controller is split into two main layers:
 
@@ -25,7 +28,7 @@ Inside the microcontroller, responsibilities are divided between two cores:
 
 This separation keeps timing-sensitive motion control on the embedded side while the desktop application remains an operator and diagnostic interface.
 
-## Main Features
+### Main Features
 
 - Dual-core STM32H755 firmware architecture.
 - USB CDC text protocol over virtual COM port.
@@ -36,7 +39,7 @@ This separation keeps timing-sensitive motion control on the embedded side while
 - Configurable axis mechanics through header configuration files.
 - Qt Widgets desktop HMI with serial communication, jog mode, feed override and status monitoring.
 
-## Current Configuration
+### Current Configuration
 
 The current mechanical configuration assumes:
 
@@ -48,7 +51,7 @@ The current mechanical configuration assumes:
 
 These values can be changed in the firmware configuration files.
 
-## Communication Example
+### Communication Example
 
 ```text
 ADD:G91;
@@ -62,43 +65,43 @@ RTSTATUS;
 The HMI sends high-level text commands.
 The firmware validates them, stores program lines, executes motion and reports status.
 
-## Development Roadmap
+### Development Roadmap
 
-### v1.1 Cleanup
+#### v1.1 Cleanup
 
 - Improve code formatting consistency.
 - Add protocol documentation.
 - Add wiring documentation for CL57Y stepper drivers.
 - Add screenshots and diagrams to repository documentation.
 
-### v1.2 Safety
+#### v1.2 Safety
 
 - Add physical limit switch input handling.
 - Add E-stop diagnostic input.
 - Add driver alarm inputs.
 - Improve alarm and recovery workflow.
 
-### v1.3 Motion Planner
+#### v1.3 Motion Planner
 
 - Add acceleration and deceleration ramps.
 - Add per-axis speed limits.
 - Add trapezoidal or S-curve motion profiles.
 
-### v1.4 HMI Pro
+#### v1.4 HMI Pro
 
 - Add G-code preview.
 - Add improved program queue visualization.
 - Add diagnostic export.
 - Add connection recovery workflow.
 
-### v2.0 Controller Platform
+#### v2.0 Controller Platform
 
 - Add command IDs and acknowledgements.
 - Add protocol checksums.
 - Add machine configuration from HMI.
 - Add more robust long-program streaming.
 
-## Project Status
+### Project Status
 
 The current version is a working prototype baseline.
 It is suitable for further development, experiments and gradual transformation into a more complete CNC controller platform.
