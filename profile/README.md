@@ -1,3 +1,5 @@
+<p align="center"><img src="./assets/sml-github-logo-horizontal.svg" alt="Surowiecki Motion Labs" width="800"></p>
+
 # Surowiecki Motion Labs
 
 Embedded motion control projects focused on STM32 firmware, CNC systems and desktop HMI tools.
@@ -105,3 +107,4 @@ The firmware validates them, stores program lines, executes motion and reports s
 
 The current version is a working prototype baseline.
 It is suitable for further development, experiments and gradual transformation into a more complete CNC controller platform.
+
