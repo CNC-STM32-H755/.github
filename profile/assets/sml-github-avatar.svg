@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 800" role="img" aria-labelledby="title desc">
+  <title id="title">SML GitHub avatar</title>
+  <desc id="desc">Minimal SML avatar for Surowiecki Motion Labs.</desc>
+  <rect width="800" height="800" rx="96" fill="#0b1018"/>
+  <text x="400" y="410"
+        fill="#f5f8ff"
+        font-family="Arial, Helvetica, sans-serif"
+        font-size="210"
+        font-weight="800"
+        text-anchor="middle"
+        letter-spacing="10">SML</text>
+  <path d="M210 506 H590"
+        fill="none"
+        stroke="#2d9cff"
+        stroke-width="34"
+        stroke-linecap="round"/>
+  <path d="M474 506 L590 506 L540 456"
+        fill="none"
+        stroke="#2d9cff"
+        stroke-width="34"
+        stroke-linecap="round"
+        stroke-linejoin="round"/>
+</svg>

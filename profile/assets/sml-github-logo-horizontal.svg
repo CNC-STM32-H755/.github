@@ -1,0 +1,32 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 400" role="img" aria-labelledby="title desc">
+  <title id="title">Surowiecki Motion Labs horizontal logo</title>
+  <desc id="desc">Minimal horizontal logo for SML Surowiecki Motion Labs.</desc>
+  <rect width="1600" height="400" rx="48" fill="#0b1018"/>
+  <text x="110" y="190"
+        fill="#f5f8ff"
+        font-family="Arial, Helvetica, sans-serif"
+        font-size="138"
+        font-weight="800"
+        letter-spacing="8">SML</text>
+  <path d="M122 254 H382"
+        fill="none"
+        stroke="#2d9cff"
+        stroke-width="22"
+        stroke-linecap="round"/>
+  <path d="M300 254 L382 254 L348 220"
+        fill="none"
+        stroke="#2d9cff"
+        stroke-width="22"
+        stroke-linecap="round"
+        stroke-linejoin="round"/>
+  <text x="520" y="170"
+        fill="#f5f8ff"
+        font-family="Arial, Helvetica, sans-serif"
+        font-size="70"
+        font-weight="700">Surowiecki Motion Labs</text>
+  <text x="524" y="232"
+        fill="#95a4ba"
+        font-family="Arial, Helvetica, sans-serif"
+        font-size="32"
+        font-weight="500">STM32 · CNC · Motion Control · HMI</text>
+</svg>
