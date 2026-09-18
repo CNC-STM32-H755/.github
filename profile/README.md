@@ -2,7 +2,7 @@
 
 Embedded motion control projects focused on STM32 firmware, CNC systems and desktop HMI tools.
 
-The first project developed under this lab is **SMS CNC Control System**: a prototype CNC control platform based on a dual-core STM32H755 controller and a Qt desktop HMI.
+The first project developed under this lab is **SML CNC Control System**: a prototype CNC control platform based on a dual-core STM32H755 controller and a Qt desktop HMI.
 It was originally created as an engineering thesis prototype and is now being expanded as an open development platform for CNC motion control, firmware architecture experiments and desktop-machine communication.
 
 ## Repositories
@@ -12,7 +12,7 @@ It was originally created as an engineering thesis prototype and is now being ex
 | [stm32h755-cnc-firmware](https://github.com/Surowiecki-Motion-Labs/stm32h755-cnc-firmware) | Dual-core STM32H755 firmware for G-code parsing, IPC, motion execution and STEP/DIR generation. |
 | [qt-cnc-hmi](https://github.com/Surowiecki-Motion-Labs/qt-cnc-hmi) | Qt desktop HMI used to send G-code, stream programs, monitor machine state and control manual jog operations. |
 
-## SMS CNC Control System
+## SML CNC Control System
 
 ### System Overview
 
